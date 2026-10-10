@@ -9,7 +9,7 @@
 - ▲ [Next.js 16](https://nextjs.org/) - App Router in `src/`, Cache Components, partial prefetching and typed routes turned on
 - ⚛️ [React 19](https://react.dev/) - just React, nothing bolted on top
 - ⚓ [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) - lint & format in Rust, ESLint and Prettier are not invited
-- 📘 [TypeScript 7](https://www.typescriptlang.org/) - strict, ES2025, `@/*` alias pointing to `src`
+- 📘 [TypeScript 7](https://www.typescriptlang.org/) - strict, `@/*` alias pointing to `src`
 - 🍞 [Bun](https://bun.sh) - fast installs, `bun.lock` committed, version pinned via `packageManager`
 
 ## Try it now!
