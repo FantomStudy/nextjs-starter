@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Next.js Starter</h1>
 
-## Getting Started
+<br>
 
-First, run the development server:
+> This is my personal template. Opinionated, minimal, and tuned to how I like to start projects — feel free to fork it and make it yours.
+
+## Features
+
+- ▲ [Next.js 16](https://nextjs.org/) - App Router in `src/`, Cache Components, partial prefetching and typed routes turned on
+- ⚛️ [React 19](https://react.dev/) - just React, nothing bolted on top
+- ⚓ [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) - lint & format in Rust, ESLint and Prettier are not invited
+- 📘 [TypeScript 7](https://www.typescriptlang.org/) - strict, ES2025, `@/*` alias pointing to `src`
+- 🍞 [Bun](https://bun.sh) - fast installs, `bun.lock` committed, version pinned via `packageManager`
+
+## Try it now!
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bunx degit FantomStudy/nextjs-starter my-app
+cd my-app
+bun i
+```
+
+## Usage
+
+### Development
+
+Start the dev server and open http://localhost:3000
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Type-check and build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun run build
+```
 
-## Learn More
+Runs `next build`, which type-checks the project and outputs the production build to `.next`.
 
-To learn more about Next.js, take a look at the following resources:
+### Start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Serve the production build on http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+bun start
+```
 
-## Deploy on Vercel
+### Lint & Format
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+bun lint     # oxlint --fix
+bun fmt      # oxfmt
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+[MIT](./LICENSE) © [FantomStudy](https://github.com/FantomStudy)
