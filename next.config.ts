@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   typedRoutes: true,
-  reactStrictMode: true,
 };
 
 export default nextConfig;
